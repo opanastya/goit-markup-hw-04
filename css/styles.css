@@ -182,8 +182,6 @@ color: var(--blue-color);
     padding: 10px 32px;
     min-width: 200px;
     min-height: 50px;
-    border: 1px solid var(--btn);
-    background: var(--btn);
 
     font-family: 'Roboto';
     font-weight: 700;
@@ -191,17 +189,14 @@ color: var(--blue-color);
     line-height: 1.88;
     letter-spacing: 0.06em; 
     cursor: pointer;
-    color: var(--black-color);
     
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+
         /* display: flex;
             align-items: center;
             text-align: center; */
-}
-.hero-btn:hover, 
-.hero-btn:focus {
-color: var(--white-color);
-background-color: var(--blue-color);
-border: 1px solid var(--blue-color);
 }
 
 /*----------SKILLS-------------------*/
@@ -380,8 +375,9 @@ color: var(--grey-color);
 color: var(--white-color);
 }
 .footer {
-    /* фон временній */
 background-color: var(--bgc);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 .footer-logo {
@@ -424,7 +420,6 @@ margin-bottom: 20px;
 }
 .join-section {
     margin-left: 70px;
-    outline: 1px solid red;
     width: 206px;
     height: 80px;
     padding-top: 72px;
@@ -436,12 +431,11 @@ margin-bottom: 20px;
 .left-section {
     padding-top: 60px;
     padding-bottom: 60px;
-    outline: 1px solid red;
-
     }
-.team-social-footer {
-    background-color: #000000;
-}
+.team-social-footer { 
+    background-color: rgba(255, 255, 255, 0.1);
+    --color1: #FFFFFF;
+} 
 
 /* -----------PROFIL---------------- */
 /* ----------gallery----------------- */
@@ -466,6 +460,7 @@ margin-bottom: 20px;
 .gallery-btn:focus {
 color: var(--white-color);
 background-color: var(--blue-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .gallery-btn-list {
     display: flex;
@@ -489,6 +484,9 @@ margin-bottom: -30px;
 .gallery-item {
 margin-right: 30px;
 margin-bottom: 30px;
+}
+.gallery-item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .gallery-img {
     width: 370px;
